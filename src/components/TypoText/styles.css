@@ -1,0 +1,101 @@
+.road {
+  color: white;
+  text-align: left;
+  background-color: black;
+  width: 330px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 2px #ff00ff;
+  margin-top: 60px;
+}
+.road h1 {
+  font-family: "Grinched 2.0", sans-serif;
+  line-height: 100%;
+  font-size: 38.2pt;
+  font-weight: normal;
+  margin: 0;
+}
+.road p {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 19pt;
+}
+.road span {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+}
+.road.right span {
+  margin-top: -35px;
+  margin-left: -40px;
+  border-right: 30px solid #ff00ff;
+}
+.road.left span {
+  margin-top: -35px;
+  margin-left: 340px;
+  border-left: 30px solid #ff00ff;
+}
+.stand {
+  box-shadow: 0px 0px 4px 2px #00ffff;
+  height: 212px;
+  width: 264px;
+  margin-right: 20px;
+}
+.stand h1 {
+  font-family: "Century\ Gothic";
+  font-size: 26pt;
+  line-height: 100%;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.stand p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17pt;
+  font-weight: normal;
+}
+@media screen and (max-width: 990px) {
+  .road {
+    width: 240px;
+  }
+  .road.right span {
+    margin-top: 10px;
+    margin-left: -40px;
+    border-right: 30px solid #ff00ff;
+  }
+  .road.left span {
+    margin-top: 10px;
+    margin-left: 250px;
+    border-left: 30px solid #ff00ff;
+  }
+  .stand {
+    width: 320px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .road-container {
+    flex-direction: column;
+  }
+  .roadmap {
+    width: 95%;
+  }
+  .stand {
+    width: 100%;
+    margin: 2vh 0;
+    min-height: 212px;
+  }
+  .road span {
+    display: none;
+  }
+  .road {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .road h1 {
+    font-size: 25pt;
+    margin-bottom: 10px;
+  }
+}

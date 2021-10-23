@@ -1,0 +1,92 @@
+.welcome {
+  width: 960px;
+  margin: 5vh auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.welcome-left {
+  width: 348px;
+  height: 398px;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 4px 2px #ff00ff;
+  margin-right: 80px;
+}
+.welcome-left img {
+  width: 347px;
+  height: 347px;
+}
+
+.welcome-right {
+  text-align: left;
+  width: 510px;
+  color: white;
+}
+.welcome-right p {
+  font-size: 26.5pt;
+  font-weight: normal;
+  margin: 0;
+  font-family: "Century\ Gothic";
+}
+.welcome-right h2 {
+  font-family: "Grinched 2.0", sans-serif;
+  font-size: 78pt;
+  line-height: 100%;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.welcome-right span {
+  font-size: 18pt;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 990px) {
+  .welcome {
+    width: 750px;
+  }
+  .welcome-left {
+    width: 300px;
+    margin-right: 50px;
+  }
+  .welcome-left img {
+    width: 295px;
+    height: 295px;
+  }
+  .welcome-right {
+    width: 370px;
+  }
+  .welcome-right h2 {
+    font-size: 55pt;
+  }
+}
+@media screen and (max-width: 768px) {
+  .welcome {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .welcome-left {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .welcome-left {
+    width: 100%;
+  }
+  .welcome-left img {
+    width: 98%;
+    height: 98%;
+  }
+  .welcome-right {
+    width: 100%;
+  }
+  .welcome-right h2 {
+    font-size: 40pt;
+  }
+}

@@ -1,0 +1,21 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.slider-component {
+  margin: 12vh auto;
+  width: 90%;
+}
+.slider-component img {
+  width: 239px;
+  margin: 0 auto;
+  height: 239px;
+}
+.each-slide {
+  margin: 0 auto;
+  width: 240px;
+}
+@media screen and (max-width: 500px) {
+  .slider-component {
+    width: 80%;
+  }
+}

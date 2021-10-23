@@ -1,0 +1,64 @@
+.stand-out {
+  color: white;
+  margin-top: 40vh;
+}
+.notes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 920px;
+  margin: 0 auto;
+}
+.stand-out > h1 {
+  font-size: 63pt;
+  font-family: "Grinched 2.0", sans-serif;
+  line-height: 100%;
+  font-weight: normal;
+}
+.stand-out-p {
+  font-size: 23pt;
+  margin: 0 auto;
+  width: 90%;
+  font-family: "PT Sans", sans-serif;
+  line-height: 100%;
+  font-weight: normal;
+}
+@media screen and (max-width: 1200px) {
+  .stand-out > h1 {
+    font-size: 53pt;
+  }
+}
+@media screen and (max-width: 990px) {
+  .notes-container {
+    width: 750px;
+  }
+  .stand-out > h1 {
+    font-size: 43pt;
+  }
+  .stand-out-p {
+    font-size: 20pt;
+  }
+}
+@media screen and (max-width: 768px) {
+  .notes-container {
+    width: 95%;
+  }
+  .stand-out {
+    margin-top: 20vh;
+  }
+  .stand-out > h1 {
+    font-size: 32pt;
+  }
+  .stand-out-p {
+    font-size: 17pt;
+  }
+}
+@media screen and (max-width: 576px) {
+  .stand-out > h1 {
+    font-size: 25pt;
+  }
+  .stand-out-p {
+    font-size: 17pt;
+  }
+}

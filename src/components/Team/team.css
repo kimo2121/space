@@ -1,0 +1,62 @@
+.team {
+  background-color: cyan;
+  padding: 50px 0;
+  margin: 5vh 0;
+}
+.team > h1 {
+  font-size: 63pt;
+  font-family: "Grinched 2.0", sans-serif;
+  line-height: 100%;
+  font-weight: normal;
+  width: 90%;
+  margin: 2vh auto;
+}
+.each-member > h1 {
+  font-size: 63pt;
+  font-family: "Grinched 2.0", sans-serif;
+  line-height: 100%;
+  font-weight: normal;
+  margin: 2vh auto;
+}
+.team-p {
+  font-size: 23pt;
+  margin: 0 auto;
+  width: 90%;
+  font-family: "PT Sans", sans-serif;
+  line-height: 100%;
+  font-weight: normal;
+}
+.each-member span {
+  font-size: 17pt;
+  font-family: "PT Sans", sans-serif;
+  line-height: 100%;
+  font-weight: normal;
+}
+.members {
+  display: flex;
+  margin-top: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.each-member {
+  width: 183px;
+  margin: 2vh 30px;
+}
+.each-member img {
+  width: 183px;
+}
+@media screen and (max-width: 990px) {
+  .team {
+  }
+  .members {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team > h1 {
+    font-size: 53pt;
+  }
+  .team-p {
+    font-size: 17pt;
+  }
+}

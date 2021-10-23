@@ -1,0 +1,40 @@
+.footer-btns button {
+  color: black;
+  background-color: cyan;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  width: 195px;
+  height: 23px;
+  display: flex;
+  font-size: 16pt;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+}
+.footer {
+  margin-top: 50px;
+}
+.footer-btns {
+  display: flex;
+  justify-content: center;
+}
+.footer p {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-weight: normal;
+  font-size: 16pt;
+  width: 90%;
+  margin: 2vh auto;
+}
+@media screen and (max-width: 500px) {
+  .footer-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-btns button {
+    margin: 1vh 0;
+  }
+}

@@ -1,0 +1,64 @@
+.road-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roadmap {
+  color: white;
+  width: 950px;
+  margin: 0 auto;
+}
+.roadmap > h1 {
+  font-size: 78pt;
+  font-family: "Grinched 2.0", sans-serif;
+  line-height: 100%;
+  font-weight: normal;
+}
+.roadmap-p {
+  font-size: 23pt;
+  margin: 0 auto;
+  width: 90%;
+  font-family: "PT Sans", sans-serif;
+  line-height: 100%;
+  font-weight: normal;
+}
+.roads-divider {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  margin: 0 20px;
+  margin-top: -15px;
+}
+.roads-divider img {
+  height: 115px;
+}
+@media screen and (max-width: 990px) {
+  .roadmap {
+    width: 750px;
+  }
+  .roads-divider {
+    margin: 0 30px;
+    margin-top: 50px;
+    width: 160px;
+  }
+  .roads-divider img {
+    height: 130px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .road-container {
+    flex-direction: column;
+  }
+  .roadmap {
+    width: 95%;
+  }
+  .roads-divider {
+    display: none;
+  }
+  .roadmap > h1 {
+    font-size: 50pt;
+  }
+  .roadmap-p {
+    font-size: 17pt;
+  }
+}

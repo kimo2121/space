@@ -1,0 +1,129 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 81px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.603);
+}
+.nav-logo {
+  position: relative;
+  margin-left: 5vw;
+  top: 40px;
+}
+.nav-logo img {
+  width: 236px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  margin-right: 16px;
+  font-size: 16pt;
+  font-family: "PT Sans", sans-serif;
+}
+.connect-btn {
+  background-color: cyan;
+  font-size: 16pt;
+  border: none;
+  padding: 0 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+}
+.ext-links svg {
+  margin-right: 15px;
+  color: cyan;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.ext-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-icon {
+  display: none;
+  fill: white;
+  margin-left: 20px;
+}
+.mob-nav-links a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 16pt;
+  margin-top: 10px;
+  font-family: "PT Sans", sans-serif;
+}
+.close-icon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.mob-nav-links {
+  width: 350px;
+  top: 0;
+  padding-top: 50px;
+  position: fixed;
+  right: -370px;
+  transition: all 0.3s;
+  background-color: black;
+  height: 100vh;
+}
+.mob-nav-links.active {
+  right: 0;
+}
+.combination {
+  display: flex;
+}
+.nav-logo {
+  width: fit-content;
+}
+.mob-ext-links a {
+  width: fit-content;
+  color: cyan;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 2vh auto;
+}
+@media screen and (max-width: 1024px) {
+  .menu-icon {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .ext-links {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-logo img {
+    width: 170px;
+    height: 80px;
+    top: 30px;
+  }
+  .nav-logo {
+    top: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nav-logo img {
+    width: 120px;
+    height: 60px;
+  }
+  .nav-logo {
+    top: 20px;
+  }
+}

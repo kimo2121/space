@@ -1,0 +1,57 @@
+.banner {
+  background-image: url(/src/assets/images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 800px;
+}
+.divider-home {
+  width: 60%;
+  height: 20vh;
+  margin: 0 auto;
+}
+.banner img {
+  width: 500px;
+  margin-top: 150px;
+  height: 570px;
+}
+.road-stand-background {
+  background-image: url(/src/assets/images/space-background.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: fit-content;
+  background-size: cover;
+  /* padding: 100px 0; */
+}
+.footer-background-1st {
+  left: 0;
+  width: 550px;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+  height: 555px;
+}
+.footer-background-2nd {
+  right: 0;
+  width: 550px;
+  position: absolute;
+  opacity: 0.5;
+  height: 555px;
+  margin-top: -150px;
+  z-index: -1;
+}
+@media screen and (max-width: 576px) {
+  .footer-background-1st {
+    width: 350px;
+    height: 350px;
+  }
+  .footer-background-2nd {
+    width: 350px;
+    height: 350px;
+  }
+  .banner img {
+    width: 350px;
+    margin-top: 200px;
+    height: 450px;
+  }
+}
